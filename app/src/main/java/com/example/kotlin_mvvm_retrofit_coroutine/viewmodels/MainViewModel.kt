@@ -12,10 +12,11 @@ import kotlinx.coroutines.flow.catch
 import kotlinx.coroutines.flow.collect
 import kotlinx.coroutines.launch
 
-public class MainViewModel() : ViewModel() {
+class MainViewModel() : ViewModel() {
 
     private val repository = MainRepository()
- //   val showProgress: LiveData<Boolean>
+
+    //   val showProgress: LiveData<Boolean>
     val todoList = MutableLiveData<Resource<List<ItemAlbum>>>()
 //    val errorMsg: LiveData<String>
 
@@ -36,8 +37,7 @@ public class MainViewModel() : ViewModel() {
                 .catch { e ->
                     Log.d("TAG", "getAllTodos: " + e.message)
 
-                }.collect {
-                    postData->
+                }.collect { postData ->
                     todoList.value = postData
                 }
         }

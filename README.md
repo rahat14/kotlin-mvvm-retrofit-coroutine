@@ -1,2 +1,24 @@
 # kotlin-mvvm-retrofit-coroutine
- A sample Project with retrofit and kotlin best practice
+This is an example to demonstrate **MVVM Architecture in Kotlin with Retrofit** in Android. Also  i tried to follow all the best practice. 
+For Image Loading I used Coil as its works well with coroutine . 
+So i used :
+
+
+# Tech stack & Open-source libraries
+
+- 100% [Kotlin](https://kotlinlang.org/) based, [Coroutines](https://github.com/Kotlin/kotlinx.coroutines) + [Flow](https://kotlin.github.io/kotlinx.coroutines/kotlinx-coroutines-core/kotlinx.coroutines.flow/) for asynchronous.
+- JetPack🚀
+  - View Binding - View binding is a feature that allows you to more easily write code that interacts with views.
+  - LiveData - notify domain layer data to views.
+  - Lifecycle - dispose of observing data when lifecycle state changes.
+  - ViewModel - UI related data holder, lifecycle aware.
+- [Retrofit2 & OkHttp3](https://github.com/square/retrofit) - construct the REST APIs and paging network data.
+- [Gson](https://github.com/google/gson) - Gson is a Java library that can be used to convert Java Objects into their JSON representation.
+- [coil](https://github.com/coil-kt/coil) - an image loading library for Android backed by Kotlin Coroutines.
+- [okhttp-logging-interceptor](https://github.com/square/okhttp/blob/master/okhttp-logging-interceptor/README.md) - logs HTTP request and response data.
+- [kotlinx.coroutines](https://github.com/Kotlin/kotlinx.coroutines) - Library Support for coroutines,provides `runBlocking` coroutine builder used in tests
+for Android.
+
+## Architecture
+- MVVM Architecture (View - DataBinding - ViewModel - Model)
+- Repository pattern
